@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+/*header section style start*/
+.header {
+    text-align: center;
+}
+
+.header .hello {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    text-transform: capitalize;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -20px;
+}
+
+hr {
+    height: 3px;
+    background: #000;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/*header section style end*/
+
+.calculatorWrapper {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/*form section start*/
+.calculatorWrapper .form {}
+
+.calculatorWrapper .form .allInput {
+    display: flex;
+}
+
+.calculatorWrapper .form .allInput .inputWrap {
+    position: relative;
+    flex-basis: 25%;
+    margin-right: 10px;
+}
+
+.calculatorWrapper .form .allInput .inputWrap:last-child {
+    margin-right: 0 !important;
+}
+
+.calculatorWrapper .form .allInput .inputWrap label {
+    position: absolute;
+    top: -20px;
+    font-weight: bold;
+}
+
+.calculatorWrapper .form .allInput .inputWrap input {
+    width: 100%;
+    min-height: 30px;
+    font-size: 18px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.calculatorWrapper .form .allInput .inputWrap .submit {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    min-height: 30px;
+}
+
+.calculatorWrapper .form .allInput .inputWrap select {
+    width: 100%;
+    min-height: 30px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/*form section end*/
+
+/*input value adding section start*/
+table {
+    width: 400px;
+    margin: auto;
+    border: 2px solid #ddd;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 10px;
+}
+
+.tbody {
+    display: block;
+}
+
+.tbody tr {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.tbody tr:last-child {
+    border-bottom: none;
+}
+
+.tbody tr td {
+    width: 100%;
+
+}
+
+.tbody tr td:last-child::before {
+    content: '$'
+}
+
+tfoot {
+    border-top: 5px solid #ccc;
+    display: block;
+    margin-top: 30px;
+}
+
+tfoot tr {
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+tfoot tr td {
+    text-transform: capitalize;
+    width: 100%;
+}
+
+tfoot tr:last-child {}
+
+thead {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tfoot,
+tbody {
+    padding: 20px 30px;
+}
+
+/*input value adding section end*/
+/*conclusion style part start*/
+
+/*conclusion style part end*/
+.calculatorWrapper .output {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .calculatorWrapper .form .allInput {
+        flex-direction: column;
+    }
+
+    .calculatorWrapper .form .allInput .inputWrap {
+        position: relative;
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+        padding: 0 30px;
+    }
+
+    table {
+        width: 90%;
+        margin: auto;
+        border: 2px solid #ddd;
+        margin-bottom: 50px;
+        box-shadow: 0 0 10px #ddd;
+        border-radius: 10px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    .header .hello {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: -20px;
+        text-transform: capitalize;
+    }
+    input,
+    select{
+        border: 1px solid #aaa;
+    }
+}

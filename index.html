@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/sack-money-big-pile-cash-money-icon-illustration-money-bag-flat-icon_385450-362.jpg" type="image/x-icon"/>
+    <title>Seld Budget Calculator</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="hello" class="hello">Hello!</div>
+        <h1>Self Budget Calculator</h1>
+        <p>(Monthly Basis)</p>
+    </div>
+    <hr>
+    <div class="calculatorWrapper">
+        <div class="form">
+            <form action="#" id="form">
+                <div class="allInput">
+                    <div class="inputWrap">
+                        <label for="title">Title</label>
+                        <input type="text" placeholder="Enter Title..." id="title" class="input" required>
+                    </div>
+                    <div class="inputWrap">
+                        <label for="amount">amount</label>
+                        <input type="number" placeholder="Enter Amount..." id="amount" required>
+                    </div>
+                    <div class="inputWrap">
+                        <label for="type">Type</label>
+                        <select name="type" id="type" required>
+                            <option value="" disabled selected>Pick a option: </option>
+                            <option value="cashIn">Cash in</option>
+                            <option value="expense">Expense</option>
+                        </select>
+                    </div>
+                    <!-- submit button -->
+                    <div class="inputWrap">
+                        <input type="submit" value="submit" id="submit" class="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="output" id="output">
+            <table id="accounting" class="accounting">
+                <thead>
+                    <tr>
+                        <td>Total submitted Input:</td>
+                        <td id="countInput">0</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody" class="tbody">
+                </tbody>
+                <tfoot>
+                    <tr style="color: green; font-weight: bold;">
+                        <td>Total Cash-In:</td>
+                        <td>&dollar;<span id="totalCash">00</span></td>
+                    </tr>
+                    <tr style="color: red; font-weight: bold;">
+                        <td>Total Expense:</td>
+                        <td>&dollar;<span id="expense">00</span></td>
+                    </tr>
+                    <tr style="color: lime; font-weight: bold;border-bottom: none;">
+                        <td>Savings: </td>
+                        <td>&dollar;<span id="savings">00</span></td>
+                    </tr>
+                    <tr style="color: #111; font-weight: bold; font-size: 20px;border-top: 3px solid #ddd; border-bottom: none">
+                        <td>Self Budget:</td>
+                        <td>&dollar;<span id="budget">00</span></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
