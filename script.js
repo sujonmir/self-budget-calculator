@@ -35,7 +35,7 @@ let budget = document.getElementById('budget');
 let countInput = document.getElementById('countInput');
 let neg = 0
 let pos = 0
-let totalInput= 0
+let totalInput = 0
 
 form.addEventListener('submit', function() {
     // Get the tbody element
@@ -45,10 +45,10 @@ form.addEventListener('submit', function() {
     let rowCount = tbody.rows.length;
 
     // Use a for loop to iterate over each row in the tbody element
-    for (let i = 0; i < rowCount; i++) {
-        totalInput = i
+    for (let i = 0; i <= rowCount; i++) {
+        totalInput= i
     }
-    countInput.innerText= totalInput+1
+    countInput.innerText = totalInput +1 
 
     let row = createTableRow(title, amount);
     tbody.appendChild(row);
@@ -64,7 +64,7 @@ form.addEventListener('submit', function() {
     expense.innerText = neg
     savings.innerText = (pos - neg) / 2
     budget.innerText = (pos - neg) / 2
-    
+
     form.reset()
 })
 
